@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+moviepy
+praw
+google_api_python_client
+openai
