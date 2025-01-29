@@ -1,0 +1,73 @@
+﻿Reddit Style Pipeline - Progress Tracker
+Completed Steps
+This document tracks the progress of completed steps in building the Reddit-style pipeline project, detailing what has been added to the Git repository and describing each file's purpose.
+✅ 1. Project Repository & Environment Setup
+* Created a GitHub repository named reddit-style-pipeline.
+* Initialized a local Git repository and linked it to GitHub.
+* Cloned the repository locally.
+* Verified repository accessibility with git remote -v.
+✅ 2. Virtual Environment Setup
+* Verified Python version (>=3.9).
+* Created a virtual environment (venv/).
+* Excluded venv/ from Git commits using .gitignore.
+✅ 3. Installing Dependencies
+* Created requirements.txt to manage dependencies.
+Added initial dependencies:
+requests             # HTTP requests library for web scraping.
+beautifulsoup4       # Parsing HTML for Reddit scraping.
+* moviepy              # For basic video editing and slideshow generation.
+* Installed dependencies using pip install -r requirements.txt.
+✅ 4. Establishing Project Structure
+Created and verified the following directory structure:
+reddit-style-pipeline/
+├── venv/                # Virtual environment (excluded from Git)
+├── requirements.txt      # Python dependencies
+├── README.md            # Project documentation
+├── src/                 # Main source code directory
+│   ├── main.py          # Entry point of the project
+* ├── data/                # Directory for scraped data and logs
+✅ 5. File Descriptions
+Main Files Added to Git
+* .gitignore: Ensures virtual environment (venv/) and unnecessary files are not committed.
+* requirements.txt: Lists required dependencies for the project.
+* README.md: Contains a project overview and setup instructions.
+* src/ Directory: Contains the main project code.
+   * main.py: Initial entry point for the project, used to test the environment setup.
+* data/ Directory: Placeholder for storing scraped data, logs, or processed files.
+✅ 6. Testing Basic Functionality
+Implemented src/main.py to confirm the environment is working:
+def main():
+    print("Hello, Ouroboros Pipeline!")
+
+
+if __name__ == "__main__":
+*     main()
+* Successfully ran python src/main.py to verify execution.
+✅ 7. Initial Commit & GitHub Push
+* Staged all files (git add .).
+* Committed changes (git commit -m "Initial setup with fixed structure").
+* Pushed updates to GitHub (git push origin main).
+________________
+
+
+Next Steps (In Progress / To Be Completed)
+🔲 8. Develop Cost Controller
+* Implement a system to track API and resource costs.
+* Define estimated costs for each operation (e.g., API calls, TTS usage, scraping).
+* Develop logging for actual usage and comparison against estimates.
+🔲 9. Implement Scraper Engine
+* Set up lightweight data collection using Reddit API.
+* Fetch and store competitor content (top posts, engagement data, etc.).
+* Store scraped data in data/ directory.
+🔲 10. Build Content Generator
+* Implement AI-driven script generation using LLM (GPT-3.5 or local models if budget is tight).
+* Integrate basic text-to-speech (TTS) functionality (Amazon Polly or local TTS tools).
+* Store generated content in data/ for processing.
+🔲 11. Automate Publishing & Feedback Collection
+* Develop an API integration for YouTube posting.
+* Store engagement metrics for performance tracking.
+* Log publishing history and performance feedback in a database.
+🔲 12. Optimize Budget & Scaling Logic
+* Introduce auto-scaling mechanisms for expansion.
+* Automate new account creation based on revenue and engagement metrics.
+* Track budget constraints to dynamically adjust processing intensity.
