@@ -1,0 +1,13 @@
+Task,Cost,Remaining Budget
+llm_call_small,0.01,99.99
+llm_call_medium,0.05,99.94
+scrape_api_call,0.005,99.935
+sd_generation,0.02,99.915
+2025-01-29,llm_call_small,0.01,99.99
+2025-01-29,llm_call_medium,0.05,99.94
+2025-01-29,scrape_api_call,0.005,99.935
+2025-01-29,sd_generation,0.02,99.915
+2025-01-29,llm_call_small,0.01,99.99,
+2025-01-29,llm_call_medium,0.05,99.94,
+2025-01-29,scrape_api_call,0.005,99.935,
+2025-01-29,sd_generation,0.02,99.915,
